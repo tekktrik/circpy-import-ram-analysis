@@ -14,5 +14,9 @@
 .vscode
 *~
 
+# Python-specific
+__pycache__
+*.pyc
+
 # Project-specific
 test_results/
