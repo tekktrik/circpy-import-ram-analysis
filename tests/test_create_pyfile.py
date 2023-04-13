@@ -1,12 +1,19 @@
+# SPDX-FileCopyrightText: 2023 Alec Delaney, written for Adafruit Industries
+#
+# SPDX-License-Identifier: MIT
+
 import subprocess
+
 
 def test_created_code_py():
 
     import_name = "test_module"
     save_path = "./test_results/test_package/code.py"
 
-    #create_pyfile.main("test_module", save_path)
-    proc = subprocess.Popen(["python", "scripts/create_pyfile.py", import_name, save_path])
+    # create_pyfile.main("test_module", save_path)
+    proc = subprocess.Popen(
+        ["python", "scripts/create_pyfile.py", import_name, save_path]
+    )
     res = proc.communicate()
 
     assert proc.returncode == 0
