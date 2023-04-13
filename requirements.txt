@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: 2022 Alec Delaney, written for Adafruit Industries
+#
+# SPDX-License-Identifier: MIT
+
+pre-commit
+Jinja2
+pytest
+click

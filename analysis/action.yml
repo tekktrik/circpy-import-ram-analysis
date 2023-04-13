@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: 2023 Alec Delaney, written for Adafruit Industries
+#
+# SPDX-License-Identifier: MIT
+
+name: 'Build package of .mpy files'
+description: 'Build mpy-cross for usage in GitHub Actions'
+inputs:
+  github-token:
+    description: 'Your GitHub token, needed to upload the ZIP file'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Install zip
+      shell: bash
+      run: |
+        sudo apt install zip
